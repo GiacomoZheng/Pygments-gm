@@ -9,10 +9,6 @@ from pygments.token import (
 from pygments.lexer import RegexLexer, bygroups, include, default
 from pygments.style import Style
 
-# from pygments import highlight
-
-from pygments.formatters import HtmlFormatter
-
 __all__ = ['GMLexer']
 
 class GMLexer(RegexLexer):
@@ -174,6 +170,3 @@ class GMLexer(RegexLexer):
 #         Name.Class:             'bold #0f0',
 #         String:                 'bg:#eee #111'
 #     }
-
-if __name__ == "__main__":
-	print(HtmlFormatter(style='colorful').get_style_defs()) # get css
